@@ -16,10 +16,10 @@ function displayCountries(countries) {
   countriesList.innerHTML = "";
 
   countries.forEach((country) => {
-    const countryEl = document.createElement("div");
-    countryEl.classList.add("card");
+    const countrysingle = document.createElement("div");
+    countrysingle.classList.add("card");
 
-    countryEl.innerHTML = `
+    countrysingle.innerHTML = `
             <div>
                 <img src="${country.flags.png}" alt="" />
             </div>
@@ -29,12 +29,12 @@ function displayCountries(countries) {
             </div>
         `;
 
-    countryEl.addEventListener("click", () => {
+    countrysingle.addEventListener("click", () => {
       modal.style.display = "flex";
       showCountryDetails(country);
     });
 
-    countriesList.appendChild(countryEl);
+    countriesList.appendChild(countrysingle);
   });
 }
 
@@ -54,8 +54,8 @@ function showCountryDetails(country) {
   }</span></h3>
  
   <iframe
-  width="600"
-  height="450"
+  width="80%"
+  height="40%"
   style="border:0"
   loading="lazy"
   allowfullscreen
@@ -65,7 +65,7 @@ function showCountryDetails(country) {
 `;
 }
 
-// closing the modal
+// closing modal
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
 });

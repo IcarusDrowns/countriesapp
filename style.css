@@ -52,6 +52,13 @@ span {
   max-width: 100%;
   width: 300px;
 }
+.card {
+  transition: transform 0.3s;
+}
+.card:hover {
+  transition: transform 0.3s;
+  transform: scale(1.2);
+}
 
 .card img {
   object-fit: cover;
@@ -79,11 +86,12 @@ span {
   align-items: center;
   justify-content: center;
   position: fixed;
+
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 100;
+  z-index: 10;
 }
 
 .modal .container {
@@ -109,3 +117,4 @@ span {
   top: 20px;
   right: 20px;
 }
+

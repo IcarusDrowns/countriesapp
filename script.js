@@ -59,7 +59,7 @@ function showCountryDetails(country) {
   style="border:0"
   loading="lazy"
   allowfullscreen
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBbOqTJV9KixRzl-UZymcYoLy12RlFAYZE
+  src="https://www.google.com/maps/embed/v1/place?key=
     &q=${country.name.official}">
 </iframe>
 `;
